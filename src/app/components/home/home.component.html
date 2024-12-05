@@ -1,0 +1,59 @@
+<div class="hero-section">
+  <div class="hero-content">
+    <h1 style="color: white;">Welcome to Our Barbershop</h1>
+    <p style="color: white;">Experience the art of perfect grooming</p>    <button nz-button nzType="primary" nzSize="large" routerLink="/booking">
+      Book Now
+    </button>
+  </div>
+</div>
+
+<div class="features-section">
+  <div nz-row [nzGutter]="[24, 24]">
+    <div nz-col [nzXs]="24" [nzSm]="8" *ngFor="let feature of features">
+      <nz-card>
+        <span nz-icon [nzType]="feature.icon" nzTheme="outline"></span>
+        <h3>{{feature.title}}</h3>
+        <p>{{feature.description}}</p>
+      </nz-card>
+    </div>
+  </div>
+</div>
+
+<div class="services-preview">
+  <h2>Our Services</h2>
+  <div nz-row [nzGutter]="[24, 24]">
+    <div nz-col [nzXs]="24" [nzSm]="12" [nzMd]="8">
+      <nz-card nzHoverable>
+        <img alt="Haircut" src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"/>
+        <h3>Classic Haircut</h3>
+        <p>Starting from $30</p>
+      </nz-card>
+    </div>
+    <div nz-col [nzXs]="24" [nzSm]="12" [nzMd]="8">
+      <nz-card nzHoverable>
+        <img alt="Beard Trim" src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"/>
+        <h3>Beard Trim</h3>
+        <p>Starting from $20</p>
+      </nz-card>
+    </div>
+    <div nz-col [nzXs]="24" [nzSm]="12" [nzMd]="8">
+      <nz-card nzHoverable>
+        <img alt="Hot Towel Shave" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"/>
+        <h3>Hot Towel Shave</h3>
+        <p>Starting from $35</p>
+      </nz-card>
+    </div>
+  </div>
+</div>
+
+<div class="testimonials">
+  <h2>What Our Clients Say</h2>
+  <nz-carousel nzAutoPlay>
+    <div nz-carousel-content *ngFor="let i of [1, 2, 3]">
+      <div class="testimonial-content">
+        <p>"Outstanding service and attention to detail. Best haircut I've ever had!"</p>
+        <h4>John Doe</h4>
+      </div>
+    </div>
+  </nz-carousel>
+</div>

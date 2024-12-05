@@ -1,0 +1,91 @@
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.services-header h1 {
+  font-size: 2.5rem;
+  color: #001529;
+  margin-bottom: 16px;
+}
+
+.services-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.service-image {
+  height: 200px;
+  overflow: hidden;
+  margin: -24px -24px 24px -24px;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nz-card {
+  text-align: center;
+}
+
+nz-card h2 {
+  font-size: 1.5rem;
+  color: #001529;
+  margin: 16px 0;
+}
+
+.service-description {
+  color: #666;
+  min-height: 48px;
+}
+
+.service-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1890ff;
+}
+
+.duration {
+  color: #666;
+  align-self: center;
+}
+
+.additional-info {
+  margin-top: 64px;
+}
+
+.additional-info h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 32px;
+}
+
+.additional-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .services-header h1 {
+    font-size: 2rem;
+  }
+  
+  .service-description {
+    min-height: auto;
+  }
+}

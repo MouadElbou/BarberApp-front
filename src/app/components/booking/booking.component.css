@@ -1,0 +1,113 @@
+  .booking-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 20px;
+  }
+
+  .booking-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #1890ff;
+  }
+
+  .steps-content {
+    min-height: 400px;
+    padding: 20px;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+    min-height: 300px;
+  }
+
+  .service-card {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  nz-steps {
+    margin-bottom: 32px;
+    min-height: 64px;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .service-card.selected {
+    border: 2px solid #1890ff;
+  }
+
+  .service-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .duration {
+    color: #666;
+    margin: 8px 0;
+  }
+
+  .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1890ff;
+    margin: 8px 0;
+  }
+
+  .time-slots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 16px;
+    margin: 32px 0;
+  }
+
+  .time-slots-grid button.selected {
+    background-color: #1890ff;
+    color: white;
+  }
+
+  .steps-action {
+    margin-top: 24px;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  nz-form-item {
+    margin-bottom: 24px;
+  }
+
+  .barbers-section {
+    margin: 20px 0;
+  }
+
+  .barbers-section h3 {
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 600px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .time-slots-grid {
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+  
+    .booking-title {
+      font-size: 2rem;
+    }
+  }

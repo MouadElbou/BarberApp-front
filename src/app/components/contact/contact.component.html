@@ -1,0 +1,80 @@
+<div class="contact-container">
+  <div class="contact-header">
+    <h1>Contact Us</h1>
+    <p>Get in touch with us for any questions or concerns</p>
+  </div>
+
+  <div nz-row [nzGutter]="[48, 48]">
+    <div nz-col [nzXs]="24" [nzMd]="12">
+      <div class="contact-info">
+        <h2>Our Information</h2>
+        
+        <div class="info-item">
+          <span nz-icon nzType="environment" nzTheme="outline"></span>
+          <div>
+            <h3>Address</h3>
+            <p>123 Barber Street</p>
+            <p>New York, NY 10001</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span nz-icon nzType="phone" nzTheme="outline"></span>
+          <div>
+            <h3>Phone</h3>
+            <p>(555) 123-4567</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span nz-icon nzType="mail" nzTheme="outline"></span>
+          <div>
+            <h3>Email</h3>
+            <p>infobarbershop.com</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span nz-icon nzType="clock-circle" nzTheme="outline"></span>
+          <div>
+            <h3>Working Hours</h3>
+            <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
+            <p>Saturday: 10:00 AM - 6:00 PM</p>
+            <p>Sunday: Closed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div nz-col [nzXs]="24" [nzMd]="12">
+      <form nz-form [formGroup]="contactForm" (ngSubmit)="submitForm()">
+        <nz-form-item>
+          <nz-form-control nzErrorTip="Please input your name!">
+            <input nz-input formControlName="name" placeholder="Your Name" />
+          </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+          <nz-form-control nzErrorTip="Please input your email!">
+            <input nz-input formControlName="email" placeholder="Your Email" type="email" />
+          </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+          <nz-form-control nzErrorTip="Please input the subject!">
+            <input nz-input formControlName="subject" placeholder="Subject" />
+          </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+          <nz-form-control nzErrorTip="Please input your message!">
+            <textarea nz-input formControlName="message" placeholder="Your Message" [nzAutosize]="{ minRows: 4, maxRows: 8 }">
+            </textarea>
+          </nz-form-control>
+        </nz-form-item>
+
+        <button nz-button nzType="primary" [disabled]="!contactForm.valid">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<nz-layout>
+  <nz-header>
+    <div class="header-content">
+      <div class="logo">Barbershop</div>
+      <ul nz-menu nzMode="horizontal" nzTheme="dark">
+        <li nz-menu-item routerLink="/" routerLinkActive="ant-menu-item-selected" [routerLinkActiveOptions]="{exact: true}">Home</li>
+        <li nz-menu-item routerLink="/services" routerLinkActive="ant-menu-item-selected">Services</li>
+        <li nz-menu-item routerLink="/booking" routerLinkActive="ant-menu-item-selected">Book Now</li>
+        <li nz-menu-item routerLink="/contact" routerLinkActive="ant-menu-item-selected">Contact</li>
+      </ul>
+    </div>
+  </nz-header>
+  <nz-content>
+    <router-outlet></router-outlet>
+  </nz-content>
+  <app-footer></app-footer>
+</nz-layout>

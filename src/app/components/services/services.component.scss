@@ -1,0 +1,48 @@
+.services-container {
+  padding: 3rem 0;
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+
+    .service-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      .service-image {
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .service-content {
+        padding: 1.5rem;
+
+        h3 {
+          margin: 0 0 1rem;
+          font-size: 1.5rem;
+        }
+
+        .price {
+          font-size: 1.8rem;
+          color: #4a4a4a;
+          font-weight: bold;
+          margin: 1rem 0;
+        }
+
+        .duration {
+          color: #666;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 48px;
+}
+
+nz-header {
+  padding: 0;
+  background: #001529;
+}
+
+[nz-menu] {
+  line-height: 64px;
+}
+
+nz-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nz-content {
+  flex: 1;
+}
